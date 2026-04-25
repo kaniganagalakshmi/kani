@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+
+int isPalindrome(char str[]) {
+    int left = 0, right = strlen(str) - 1;
+    while (left < right) {
+        if (str[left++] != str[right--]) return 0; 
+    }
+    return 1;
+}
